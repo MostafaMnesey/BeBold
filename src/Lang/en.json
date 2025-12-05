@@ -1,0 +1,309 @@
+{
+  "coming": {
+    "title": "Stay Tuned",
+    "brand": "BeBold",
+    "subtitle": "Something amazing is coming soon",
+    "description": "We are working hard to bring you an incredible experience. Be patient, greatness is on the way.",
+    "rights": "© 2025 BeBold. All rights reserved."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "language": "Language",
+    "english": "English",
+    "arabic": "Arabic"
+  },
+  "hero": {
+    "BeBold": "Be Bold",
+    "Experiences": "Experiences",
+    "We craft exceptional digital experiences that push boundaries and inspire innovation": "We craft exceptional digital experiences that push boundaries and inspire innovation",
+    "Transform your vision into reality with cutting-edge solutions designed for the future": "Transform your vision into reality with cutting-edge solutions designed for the future",
+    "Get Started": "Get Started",
+    "Learn More": "Learn More",
+    "title": "AT BE BOLD, WE CREATE IDEAS",
+    "titleMiddle": "THAT DON'T JUST STAND OUT",
+    "titleEnd": "THEY LEAD.",
+    "subtitle": "We're a full‑service marketing agency based in Egypt, working remotely with clients across the globe.",
+    "description": "For 4 years, we've partnered with businesses of all sizes to transform their brands through strategy, creativity, and innovation.",
+    "closing": "Every project is a chance to challenge the ordinary, redefine impact, and help our clients lead with confidence.",
+    "ctaPrimary": "Start Your Project",
+    "ctaSecondary": "View Our Work",
+    "scrollText": "Scroll to explore"
+  },
+  "mission": {
+    "title": "OUR MISSION IS SIMPLE",
+    "brandStory": "Brand Story",
+    "purposefulGrowth": "Purposeful Growth",
+    "partnershipNotJustService": "Partnership, Not Just Service",
+    "makingBrandsMatter": "Making Brands Matter",
+    "subtitle": "We blend strategy with imagination to build brands that truly connect.",
+    "paragraph1": "Our mission is to create smart, creative, and results-driven marketing that helps brands grow with purpose and confidence. At Be Bold, we blend strategy with imagination to craft campaigns that speak to hearts and minds.",
+    "paragraph2": "We work closely with every client to understand their story, bring their vision to life and build a connection that lasts.",
+    "paragraph3": "Because for us, success isn't just about visibility it's about making brands matter."
+  },
+
+  "vision": {
+    "title": "OUR VISION",
+    "subtitle": "We build brands that feel human, look premium, and perform.",
+    "paragraph1": "Our vision is to make marketing feel simpler, smarter, and more honest. We want every brand we work with to show up with a clear voice, a strong identity, and a message people actually care about.",
+    "paragraph2": "Because real growth doesn’t come from noise — it comes from meaning, consistency, and trust.",
+    "tape": ["VISION", "IMPACT", "STRATEGY", "CREATIVITY", "GROWTH"]
+  },
+
+  "values": {
+    "title": "OUR VALUES",
+    "subtitle": "They speak for us.",
+    "items": [
+      {
+        "label": "01",
+        "title": "BOLDNESS",
+        "desc": "We challenge the ordinary and dare to stand out—without losing focus. Boldness means taking smart risks, proposing ideas early, and defending clarity over comfort. We test fast, learn faster, and move with confidence even when the path isn’t fully mapped. If a better approach exists, we’ll find it, prove it, and ship it. We don’t chase noise—we chase meaningful impact and measurable results."
+      },
+      {
+        "label": "02",
+        "title": "CREATIVITY",
+        "desc": "Ideas with impact, not decoration. Creativity for us is the ability to connect strategy with emotion and turn constraints into advantages. We explore multiple directions, prototype quickly, and refine with intention—so every visual, word, and interaction serves a purpose. We draw inspiration from culture, business, and technology to craft work that feels fresh today and still makes sense tomorrow."
+      },
+      {
+        "label": "03",
+        "title": "INTEGRITY",
+        "desc": "We deliver what we promise—clearly, honestly, and consistently. Integrity means transparent communication, realistic timelines, and decisions backed by reasoning and data. We speak up when something can be improved, and we protect the quality of the work like it’s our own brand on the line. No surprises, no shortcuts—just reliable execution and partnerships built on trust."
+      },
+      {
+        "label": "04",
+        "title": "COLLABORATION",
+        "desc": "We work as partners, not just service providers. Collaboration means listening deeply, aligning on goals, and building together through feedback loops that respect time and quality. We share progress early, keep stakeholders in sync, and document decisions so the project stays resilient. The best outcomes come from combined strengths—yours and ours—moving in one direction."
+      }
+    ]
+  },
+  "facts": {
+    "title": "FACTS",
+    "subtitle": "They speak for us.",
+    "items": [
+      {
+        "value": 36.2,
+        "decimals": 1,
+        "suffix": "M+",
+        "label": "Reach & Total Impressions",
+        "desc": "Delivered across multiple industries and platforms."
+      },
+      {
+        "value": 120,
+        "suffix": "+",
+        "label": "Creative Campaigns",
+        "desc": "From concept to execution—crafted for real outcomes."
+      },
+      {
+        "value": 500,
+        "suffix": "+",
+        "label": "Talented Team Members",
+        "desc": "Strategists, creators, designers, and media experts."
+      },
+      {
+        "value": 4,
+        "suffix": "+",
+        "label": "Years of Experience",
+        "desc": "Bold marketing experience building standout brands."
+      },
+      {
+        "value": 100,
+        "suffix": "+",
+        "label": "Active Clients",
+        "desc": "From Egypt, KSA, and beyond."
+      },
+      {
+        "value": 300,
+        "suffix": "%+",
+        "label": "Client Growth",
+        "desc": "Average increase after our campaigns."
+      }
+    ]
+  },
+  "exclusiveAdvantage": {
+    "kicker": "EXCLUSIVE ADVANTAGE",
+    "title": "In-House Media Production",
+    "headline": "Everything under one roof—so production moves faster and looks better.",
+    "paragraphs": [
+      "What truly sets Be Bold apart is our fully equipped, in-house media team—the only one of its kind in the Delta region.",
+      "From styling and set design to creative direction and reel production, everything happens under one roof."
+    ],
+    "highlight": "Faster production • Lower costs • World-class content",
+    "tags": ["Styling", "Set Design", "Creative Direction", "Reels"],
+    "benefits": [
+      {
+        "title": "Seamless Workflow",
+        "desc": "Less back-and-forth—one team, one process."
+      },
+      {
+        "title": "Faster Delivery",
+        "desc": "Quick turnarounds without sacrificing quality."
+      },
+      {
+        "title": "Lower Costs",
+        "desc": "Fewer external vendors and clearer overhead."
+      },
+      {
+        "title": "World-Class Content",
+        "desc": "Built to perform across platforms and industries."
+      }
+    ],
+    "ctaPrimary": "Let’s Produce",
+    "ctaSecondary": "See Examples"
+  },
+
+  "contact": {
+    "kicker": "CONTACT",
+    "title": "Location & Contact",
+    "subtitle": "Let’s start with a quick conversation—then we’ll get back with a clear plan.",
+    "location": {
+      "title": "Location",
+      "addressLine1": "Delta Region, Egypt",
+      "addressLine2": "Business hours: Sun–Thu, 10 AM – 6 PM",
+      "note": "We also work remotely with clients across Egypt, KSA, and beyond."
+    },
+    "methodsTitle": "Contact Methods",
+    "methods": [
+      {
+        "key": "whatsapp",
+        "title": "WhatsApp",
+        "desc": "Fastest way to reach us and follow up.",
+        "value": "+20 10 0000 0000",
+        "href": "https://wa.me/201000000000"
+      },
+      {
+        "key": "phone",
+        "title": "Call",
+        "desc": "Quick call for core details.",
+        "value": "+20 10 0000 0000",
+        "href": "tel:+201000000000"
+      },
+      {
+        "key": "email",
+        "title": "Email",
+        "desc": "For proposals, files, and details.",
+        "value": "hello@bebold.agency",
+        "href": "mailto:hello@bebold.agency"
+      },
+      {
+        "key": "instagram",
+        "title": "Instagram",
+        "desc": "See our latest work and updates.",
+        "value": "@bebold.agency",
+        "href": "https://instagram.com/bebold.agency"
+      }
+    ],
+    "ctaPrimary": { "label": "Start Your Project", "href": "#contact" },
+    "ctaSecondary": { "label": "View Our Work", "href": "#work" }
+  },
+  "footer": {
+    "brand": { "name": "بي بولد", "tagline": "وكالة تسويق متكاملة" },
+    "description": "بنمزج الاستراتيجية بالإبداع عشان نبني علامات قوية وتواصل حقيقي يحقق نتائج.",
+    "rights": "© 2025 بي بولد. جميع الحقوق محفوظة.",
+    "columns": [
+      {
+        "title": "روابط",
+        "links": [
+          { "label": "الرئيسية", "href": "#home" },
+          { "label": "من نحن", "href": "#about" },
+          { "label": "الخدمات", "href": "#services" },
+          { "label": "تواصل معنا", "href": "#contact" }
+        ]
+      },
+      {
+        "title": "مهم",
+        "links": [
+          { "label": "أعمالنا", "href": "#work" },
+          { "label": "الأسعار", "href": "#pricing" },
+          { "label": "الأسئلة الشائعة", "href": "#faq" },
+          { "label": "سياسة الخصوصية", "href": "#privacy" }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "key": "instagram",
+        "label": "Instagram",
+        "href": "https://instagram.com/bebold.agency"
+      },
+      {
+        "key": "facebook",
+        "label": "Facebook",
+        "href": "https://facebook.com"
+      },
+      { "key": "tiktok", "label": "TikTok", "href": "https://tiktok.com" },
+      { "key": "linkedin", "label": "LinkedIn", "href": "https://linkedin.com" }
+    ],
+    "contact": {
+      "title": "تواصل سريع",
+      "items": [
+        {
+          "label": "واتساب",
+          "value": "+20 10 0000 0000",
+          "href": "https://wa.me/201000000000"
+        },
+        {
+          "label": "بريد",
+          "value": "hello@bebold.agency",
+          "href": "mailto:hello@bebold.agency"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "brand": { "name": "Be Bold", "tagline": "Full-service marketing agency" },
+    "description": "We blend strategy with creativity to build strong brands and real communication that delivers results.",
+    "rights": "© 2025 Be Bold. All rights reserved.",
+    "columns": [
+      {
+        "title": "Links",
+        "links": [
+          { "label": "Home", "href": "#home" },
+          { "label": "About", "href": "#about" },
+          { "label": "Services", "href": "#services" },
+          { "label": "Contact", "href": "#contact" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "Work", "href": "#work" },
+          { "label": "Pricing", "href": "#pricing" },
+          { "label": "FAQ", "href": "#faq" },
+          { "label": "Privacy Policy", "href": "#privacy" }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "key": "instagram",
+        "label": "Instagram",
+        "href": "https://instagram.com/bebold.agency"
+      },
+      {
+        "key": "facebook",
+        "label": "Facebook",
+        "href": "https://facebook.com"
+      },
+      { "key": "tiktok", "label": "TikTok", "href": "https://tiktok.com" },
+      { "key": "linkedin", "label": "LinkedIn", "href": "https://linkedin.com" }
+    ],
+    "contact": {
+      "title": "Quick Contact",
+      "items": [
+        {
+          "label": "WhatsApp",
+          "value": "+20 10 0000 0000",
+          "href": "https://wa.me/201000000000"
+        },
+        {
+          "label": "Email",
+          "value": "hello@bebold.agency",
+          "href": "mailto:hello@bebold.agency"
+        }
+      ]
+    }
+  }
+}

@@ -1,62 +1,50 @@
-import { Metadata } from "next";
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
-export const metadata: Metadata = {
-  title: "BeBold-Marketing | Stay Tuned",
-  description: "BeBold-Marketing | Stay Tuned",
-};
-
-export default function Home() {
+export default function Page() {
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/en");
+  }, []);
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-[#FE4701] to-black flex items-center justify-center px-4">
-      <div className="text-center max-w-2xl">
-        <div className="flex justify-center w-full">
-          <Image
-            src="/LOGO.png"
-            alt="Logo"
-            width={250}
-            height={250}
-            className="animate-bounce"
-          />
-        </div>
-
-        {/* Floating Blobs */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-
-          <div className="absolute top-40 right-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-
-          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
-        </div>
-
-        {/* Content */}
-        <div className="relative z-10">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 text-white animate-pulse">
-            Stay Tuned
-          </h1>
-
-          <p className="text-xl md:text-2xl text-gray-50 mb-8 font-light">
-            Something amazing is coming soon
-          </p>
-
-          <p className="text-gray-50 text-lg mb-12 leading-relaxed">
-            We are working hard to bring you an incredible experience. Be
-            patient, greatness is on the way.
-          </p>
-
-          {/* Loading Dots */}
-          <div className="flex justify-center gap-2 mb-12">
-            <div className="w-3 h-3 bg-[#FE4701] rounded-full animate-bounce"></div>
-            <div className="w-3 h-3 bg-white rounded-full animate-bounce animation-delay-100"></div>
-            <div className="w-3 h-3 bg-[#FE4701] rounded-full animate-bounce"></div>
-            <div className="w-3 h-3 bg-white rounded-full animate-bounce animation-delay-100"></div>
+    <>
+      <div>
+        <div className="fixed inset-0 z-[9999] grid place-content-center gap-4 bg-zinc-950 text-zinc-100 text-center">
+          {/* Logo */}
+          <div
+            className="mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-white/10 font-extrabold text-lg tracking-wide"
+            aria-hidden="true"
+          >
+            <Image
+              src="/png logo.webp"
+              alt="Logo"
+              width={32}
+              height={32}
+              priority
+            />
           </div>
-
-          <p className="text-gray-500 text-sm">
-            © 2025 BeBold. All rights reserved.
+          {/* Progress bar (indeterminate) */}
+          <div
+            className="relative h-2 w-64 overflow-hidden rounded-full bg-white/10"
+            role="status"
+            aria-live="polite"
+            aria-label="Loading"
+          >
+            <div className="absolute inset-y-0 left-0 w-[45%] rounded-full bg-white/70 animate-splashbar" />
+          </div>
+          <p className="m-0 text-sm font-medium text-zinc-200/90">
+            Preparing your workspace…
           </p>
         </div>
+        <style
+          dangerouslySetInnerHTML={{
+            __html:
+              "\n  @keyframes splashbar {\n    0%   { transform: translateX(-120%); width: 35%; }\n    50%  { width: 60%; }\n    100% { transform: translateX(260%); width: 35%; }\n  }\n  .animate-splashbar {\n    animation: splashbar 1.1s ease-in-out infinite;\n  }\n",
+          }}
+        />
       </div>
-    </div>
+    </>
   );
 }
