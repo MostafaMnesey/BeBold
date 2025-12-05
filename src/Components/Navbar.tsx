@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   // ===== Animations =====
- 
+
   const linksVariant: Variants = {
     hidden: {},
     show: { transition: { staggerChildren: 0.08, delayChildren: 0.15 } },
@@ -247,7 +247,7 @@ const Navbar: React.FC = () => {
                 z-[900000000]
               "
               initial={{ y: "100%" }}
-              animate={{ y: "40%" }}
+              animate={{ y: "30%" }}
               exit={{ y: "100%" }}
               transition={{ type: "spring", stiffness: 90, damping: 14 }}
               drag="y"
@@ -302,7 +302,7 @@ const Navbar: React.FC = () => {
                     <a
                       onClick={(e) => e.preventDefault()}
                       className="
-      flex items-center gap-2 px-3 py-2 rounded-full
+      flex items-center justify-center gap-2 px-3 py-2 rounded-full
       bg-white/10 hover:bg-white/14
       border border-white/10
       transition text-white cursor-pointer select-none

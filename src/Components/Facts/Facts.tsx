@@ -59,7 +59,6 @@ export default function FactsCounters() {
   const isAr = locale.startsWith("ar");
 
   const facts = t.raw("facts") as Facts;
-  console.log(facts);
 
   return (
     <Section>

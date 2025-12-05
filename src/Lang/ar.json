@@ -188,5 +188,59 @@
     ],
     "ctaPrimary": { "label": "ابدأ مشروعك", "href": "#contact" },
     "ctaSecondary": { "label": "شوف أعمالنا", "href": "#work" }
+  },
+  "footer": {
+    "brand": { "name": "بي بولد", "tagline": "وكالة تسويق متكاملة" },
+    "description": "بنمزج الاستراتيجية بالإبداع عشان نبني علامات قوية وتواصل حقيقي يحقق نتائج.",
+    "rights": "© 2025 بي بولد. جميع الحقوق محفوظة.",
+    "columns": [
+      {
+        "title": "روابط",
+        "links": [
+          { "label": "الرئيسية", "href": "#home" },
+          { "label": "من نحن", "href": "#about" },
+          { "label": "الخدمات", "href": "#services" },
+          { "label": "تواصل معنا", "href": "#contact" }
+        ]
+      },
+      {
+        "title": "مهم",
+        "links": [
+          { "label": "أعمالنا", "href": "#work" },
+          { "label": "الأسعار", "href": "#pricing" },
+          { "label": "الأسئلة الشائعة", "href": "#faq" },
+          { "label": "سياسة الخصوصية", "href": "#privacy" }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "key": "instagram",
+        "label": "Instagram",
+        "href": "https://instagram.com/bebold.agency"
+      },
+      {
+        "key": "facebook",
+        "label": "Facebook",
+        "href": "https://facebook.com"
+      },
+      { "key": "tiktok", "label": "TikTok", "href": "https://tiktok.com" },
+      { "key": "linkedin", "label": "LinkedIn", "href": "https://linkedin.com" }
+    ],
+    "contact": {
+      "title": "تواصل سريع",
+      "items": [
+        {
+          "label": "واتساب",
+          "value": "+20 10 0000 0000",
+          "href": "https://wa.me/201000000000"
+        },
+        {
+          "label": "بريد",
+          "value": "hello@bebold.agency",
+          "href": "mailto:hello@bebold.agency"
+        }
+      ]
+    }
   }
 }

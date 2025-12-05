@@ -15,7 +15,7 @@ const ValuesSection: React.FC = () => {
     title: string;
     desc: string;
   }>;
-  console.log(items);
+ 
   return (
     <Section>
       <section className="relative  bg-neutral-950  rounded-lg py-20 md:py-28  shadow-lg shadow-white/20 hover:shadow-xl hover:shadow-mainOrange/30 transition-all overflow-hidden">
