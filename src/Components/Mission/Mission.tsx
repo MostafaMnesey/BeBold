@@ -1,107 +1,118 @@
 "use client";
 
 import React from "react";
-import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { useLocale, useTranslations } from "next-intl";
 import Section from "../Section/Section";
 
-const MissionSection: React.FC = () => {
-  const t = useTranslations("mission");
+type MissionT = {
+  title: string;
+  subtitle: string;
+  paragraph1: string;
+  paragraph2: string;
+  paragraph3: string;
+  brandStory: string;
+  purposefulGrowth: string;
+  partnershipNotJustService: string;
+  makingBrandsMatter: string;
+};
 
-  const cards = [
-    {
-      id: 1,
-      label: "01",
-      title: t("purposefulGrowth"),
-      text: t("paragraph1"),
-    },
-    {
-      id: 2,
-      label: "02",
-      title: t("partnershipNotJustService"),
-      text: t("paragraph2"),
-    },
-    {
-      id: 3,
-      label: "03",
-      title: t("makingBrandsMatter"),
-      text: t("paragraph3"),
-    },
+export default function Mission() {
+  const t = useTranslations("mission");
+  const locale = useLocale();
+  const isAr = locale.startsWith("ar");
+
+  const items = [
+    t("brandStory"),
+    t("purposefulGrowth"),
+    t("partnershipNotJustService"),
+    t("makingBrandsMatter"),
   ];
 
   return (
     <Section>
-      <section className="relative  bg-neutral-950  rounded-lg py-20 md:py-28  shadow-lg shadow-white/20 hover:shadow-xl hover:shadow-mainOrange/30 transition-all overflow-hidden">
-        {/* subtle gradient background */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(235,87,35,0.2),_transparent_60%),radial-gradient(circle_at_bottom,_rgba(255,255,255,0.04),_transparent_55%)]" />
+      <section dir={isAr ? "rtl" : "ltr"} className="relative">
+        <div className="mx-auto max-w-6xl px-4">
+          <motion.h2
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.45 }}
+            className="text-3xl md:text-4xl font-semibold text-white"
+          >
+            {t("title")}
+          </motion.h2>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6">
-          {/* Section header */}
-          <div className="flex flex-col items-center text-center gap-4 mb-12 md:mb-16">
-            <p className="text-lg tracking-[0.25em] text-[#EB5723] uppercase">
-              {t("title")}
-            </p>
-            <h2 className="text-2xl md:text-4xl font-semibold text-white max-w-2xl leading-snug">
-              {t("subtitle")}
-            </h2>
-          </div>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.45, delay: 0.06 }}
+            className="mt-3 text-white/75 max-w-3xl leading-relaxed"
+          >
+            {t("subtitle")}
+          </motion.p>
 
-          {/* Cards */}
-          <div className="grid gap-6 md:gap-8 md:grid-cols-3">
-            {cards.map((card, idx) => (
-              <motion.article
-                key={card.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.45, delay: idx * 0.08 }}
-                viewport={{ once: true, amount: 0.3 }}
-                className="
-                group relative flex flex-col h-full
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.45 }}
+              className="
                 rounded-3xl border border-white/10
-                bg-white/5 backdrop-blur-xl
-                px-5 py-6 md:px-6 md:py-7
-                shadow-[0_18px_60px_-30px_rgba(0,0,0,0.9)]
-                transition-all duration-300
-                hover:border-[#EB5723]/70
-                hover:bg-white/10
-                hover:shadow-[0_18px_60px_-30px_rgba(235,87,35,0.9)]
-                transform-gpu will-change-transform
-                hover:-translate-y-1
-                hover:scale-[1.03] md:hover:scale-[1.05]
-                hover:z-10
+                bg-white/[0.06] backdrop-blur-2xl
+                p-6 md:p-8
+                shadow-[0_22px_70px_-48px_rgba(0,0,0,0.9)]
+                transform-gpu
               "
-              >
-                {/* Accent gradient blob */}
-                <div className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_top,_rgba(235,87,35,0.14),_transparent_60%)]" />
+            >
+              <p className="text-white/80 leading-relaxed">{t("paragraph1")}</p>
+              <p className="mt-4 text-white/80 leading-relaxed">
+                {t("paragraph2")}
+              </p>
+              <p className="mt-4 text-white/80 leading-relaxed">
+                {t("paragraph3")}
+              </p>
 
-                <div className="relative z-10 flex flex-col gap-3">
-                  <div className="flex items-center justify-between mb-1">
-                    <span className="text-[11px] tracking-[0.34em] text-white/60 uppercase">
-                      {t("brandStory")}
-                    </span>
-                    <span className="text-xs font-medium text-white/60">
-                      {card.label}
-                    </span>
+              <div className="mt-6 h-px w-24 bg-gradient-to-r from-[#EB5723] via-[#EB5723]/35 to-transparent" />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.45, delay: 0.06 }}
+              className="
+                rounded-3xl border border-white/10
+                bg-white/[0.06] backdrop-blur-2xl
+                p-6 md:p-8
+                shadow-[0_22px_70px_-48px_rgba(0,0,0,0.9)]
+                transform-gpu
+              "
+            >
+              <div className="grid gap-3 sm:grid-cols-2">
+                {items.map((it, idx) => (
+                  <div
+                    key={idx}
+                    className="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4"
+                  >
+                    <div className="flex items-center justify-between">
+                      <p className="text-white font-semibold">{it}</p>
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#EB5723]" />
+                    </div>
+                    <p className="mt-2 text-white/60 text-sm leading-relaxed">
+                      {isAr
+                        ? "بنشتغل على كل تفصيلة بهدف واضح ونتيجة قابلة للقياس."
+                        : "We build every detail with clear intent and measurable outcomes."}
+                    </p>
                   </div>
-
-                  <h3 className="text-lg md:text-xl font-semibold text-white">
-                    {card.title}
-                  </h3>
-
-                  <p className="mt-1 text-sm md:text-[15px] leading-relaxed text-white/80">
-                    {card.text}
-                  </p>
-
-                  {/* underline accent */}
-                  <div className="mt-4 h-px w-10 rounded-full bg-gradient-to-r from-[#EB5723] via-[#EB5723]/40 to-transparent group-hover:w-16 transition-all duration-300" />
-                </div>
-              </motion.article>
-            ))}
+                ))}
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
     </Section>
   );
-};
-
-export default MissionSection;
+}

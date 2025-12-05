@@ -3,7 +3,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
-import { log } from "console";
 import Section from "../Section/Section";
 
 type Facts = {
@@ -63,37 +62,10 @@ export default function FactsCounters() {
   return (
     <Section>
       <section
-        className="relative  bg-neutral-950  rounded-lg py-20 md:py-28  shadow-lg shadow-white/20 hover:shadow-xl hover:shadow-mainOrange/30 transition-all overflow-hidden"
+        className="bg-gradient-to-l from-black/0 py-10  via-white/5 to-black/0"
         dir={isAr ? "rtl" : "ltr"}
       >
-        {/* Background layers */}
-        <div className="pointer-events-none absolute inset-0">
-          {/* soft base */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-white/[0.04] to-black/0" />
-
-          {/* subtle grid */}
-          <div
-            className="absolute inset-0 opacity-[0.18]"
-            style={{
-              backgroundImage:
-                "linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px)",
-              backgroundSize: "52px 52px",
-              maskImage:
-                "radial-gradient(ellipse at center, black 55%, transparent 75%)",
-              WebkitMaskImage:
-                "radial-gradient(ellipse at center, black 55%, transparent 75%)",
-            }}
-          />
-
-          {/* orange glow */}
-          <div className="absolute -top-24 -right-24 h-[420px] w-[420px] rounded-full bg-[#EB5723]/12 blur-3xl" />
-          <div className="absolute -bottom-28 -left-24 h-[420px] w-[420px] rounded-full bg-[#EB5723]/10 blur-3xl" />
-
-          {/* vignette */}
-          <div className="absolute inset-0 bg-radial-fade" />
-        </div>
-
-        <div className="relative mx-auto max-w-6xl px-4">
+        <div className="mx-auto max-w-6xl px-4">
           <p className="text-white/60 text-sm tracking-[0.2em] uppercase">
             {facts.title}
           </p>
@@ -127,7 +99,7 @@ function StatCard({ stat }: { stat: Stat }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.45 }}
-      className="rounded-3xl border hover:border-mainOrange/50 transition-all hover:scale-[1.2] hover:shadow-mainOrange border-white/10 bg-white/[0.06] backdrop-blur-2xl p-6 md:p-7 shadow-[0_22px_70px_-48px_rgba(0,0,0,0.95)]"
+      className="rounded-3xl border hover:border-mainOrange/50 transition-transform transition-colors hover:scale-[1.05] hover:shadow-mainOrange border-white/10 bg-white/[0.06] backdrop-blur-2xl p-6 md:p-7 shadow-[0_22px_70px_-48px_rgba(0,0,0,0.95)] transform-gpu will-change-transform"
     >
       <div className="flex items-baseline gap-2">
         <div className="text-4xl md:text-5xl font-semibold text-white tabular-nums">

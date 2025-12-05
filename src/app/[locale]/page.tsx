@@ -53,7 +53,7 @@ export default function Home() {
 
         {/* ===== Background Layer - Covers all sections ===== */}
         <div className="fixed inset-0 z-0">
-          <Silk speed={5} scale={1} noiseIntensity={1.5} rotation={2} />
+          <Silk desktopMotion="low" />
         </div>
 
         {/* ===== Overlays Layer (darken + focus center) ===== */}
@@ -65,10 +65,10 @@ export default function Home() {
         </div>
 
         {/* ===== Decorative blobs ===== */}
-          <div className="pointer-events-none absolute inset-0 z-10">
-        <div className="absolute -top-20 -left-24 w-[520px] h-[520px] rounded-full blur-3xl bg-[#EB5723]/18 animate-blob" />
-        <div className="absolute -bottom-28 -right-24 w-[620px] h-[620px] rounded-full blur-3xl bg-purple-500/18 animate-blob animation-delay-2000" />
-      </div>
+        <div className="pointer-events-none absolute inset-0 z-10">
+          <div className="absolute -top-20 -left-24 w-[520px] h-[520px] rounded-full blur-3xl bg-[#EB5723]/18 animate-blob" />
+          <div className="absolute -bottom-28 -right-24 w-[620px] h-[620px] rounded-full blur-3xl bg-purple-500/18 animate-blob animation-delay-2000" />
+        </div>
 
         {/* ===== Hero Component ===== */}
         <Hero />
@@ -86,14 +86,13 @@ export default function Home() {
         */}
         <FactsCounters />
 
-
         {/*
         ExclusiveAdvantageSection
-        */ }
-        <ExclusiveAdvantageSection/>
+        */}
+        <ExclusiveAdvantageSection />
 
         {/* location */}
-        <LocationAndContactWays/>
+        <LocationAndContactWays />
       </div>
     </>
   );

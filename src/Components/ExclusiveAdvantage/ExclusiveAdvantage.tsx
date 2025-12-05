@@ -1,154 +1,212 @@
 "use client";
 
-import React from "react";
+import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import Section from "../Section/Section";
 
-type ExclusiveAdvantage = {
-  kicker: string; // EXCLUSIVE ADVANTAGE / ميزة حصرية
-  title: string; // العنوان
-  headline: string; // الجملة الكبيرة
+type ExclusiveAdvantageData = {
+  kicker: string;
+  title: string;
+  headline: string;
   paragraphs: string[];
   highlight: string;
   tags: string[];
-  benefits: { title: string; desc: string }[];
-  ctaPrimary: string;
-  ctaSecondary: string;
+  benefits: Array<{ title: string; desc: string }>;
+  ctaPrimary?: string;
+  ctaSecondary?: string;
 };
 
-export default function ExclusiveAdvantageSection() {
+export default function ExclusiveAdvantage() {
   const t = useTranslations("");
   const locale = useLocale();
   const isAr = locale.startsWith("ar");
 
-  const data = t.raw("exclusiveAdvantage") as ExclusiveAdvantage;
+  const data = useMemo(
+    () => t.raw("exclusiveAdvantage") as ExclusiveAdvantageData,
+    [t]
+  );
 
   return (
     <Section>
-      <section
-        className="relative  bg-neutral-950  rounded-lg py-20 md:py-28  shadow-lg shadow-white/20 hover:shadow-xl hover:shadow-mainOrange/30 transition-all overflow-hidden"
-        dir={isAr ? "rtl" : "ltr"}
-      >
-        {/* Background */}
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-white/[0.04] to-black/0" />
-          <div
-            className="absolute inset-0 opacity-[0.16]"
-            style={{
-              backgroundImage:
-                "linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px)",
-              backgroundSize: "52px 52px",
-              maskImage:
-                "radial-gradient(ellipse at center, black 55%, transparent 75%)",
-              WebkitMaskImage:
-                "radial-gradient(ellipse at center, black 55%, transparent 75%)",
-            }}
-          />
-          <div className="absolute -top-24 -right-24 h-[420px] w-[420px] rounded-full bg-[#EB5723]/12 blur-3xl" />
-          <div className="absolute -bottom-28 -left-24 h-[420px] w-[420px] rounded-full bg-[#EB5723]/10 blur-3xl" />
-          <div className="absolute inset-0 bg-[radial-gradient(60%_55%_at_50%_35%,rgba(0,0,0,0)_0%,rgba(0,0,0,0.55)_65%,rgba(0,0,0,0.85)_100%)]" />
+      <section dir={isAr ? "rtl" : "ltr"} className="relative">
+        {/* Subtle background glow */}
+        <div className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute -top-24 right-10 h-64 w-64 rounded-full bg-[#EB5723]/10 blur-3xl" />
+          <div className="absolute -bottom-24 left-10 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
         </div>
 
-        <div className="relative mx-auto max-w-6xl px-4">
-          <div className="grid gap-6 md:gap-8 md:grid-cols-5 items-stretch">
-            {/* Left card */}
+        <div className="mx-auto max-w-6xl px-4">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.45 }}
+            className="text-white/60 text-sm tracking-[0.2em] uppercase"
+          >
+            {data.kicker}
+          </motion.p>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.45, delay: 0.05 }}
+            className="mt-2 text-3xl md:text-4xl font-semibold text-white"
+          >
+            {data.title}
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.45, delay: 0.1 }}
+            className="mt-3 text-white/80 max-w-3xl leading-relaxed text-base md:text-lg"
+          >
+            {data.headline}
+          </motion.p>
+
+          {/* Main grid */}
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            {/* Left: narrative + tags + highlight */}
             <motion.div
-              initial={{ opacity: 0, y: 18 }}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
-              transition={{ duration: 0.55 }}
-              className="md:col-span-2 rounded-3xl border border-white/10 bg-white/[0.06] backdrop-blur-2xl p-6 md:p-7 shadow-[0_22px_70px_-48px_rgba(0,0,0,0.95)]"
+              transition={{ duration: 0.45 }}
+              className="
+                lg:col-span-2 relative
+                rounded-3xl border border-white/10
+                bg-white/[0.06] backdrop-blur-2xl
+                p-6 md:p-8
+                shadow-[0_22px_70px_-48px_rgba(0,0,0,0.9)]
+                transform-gpu
+              "
             >
-              <div className="flex items-center gap-3">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[#EB5723]/15 border border-[#EB5723]/25">
-                  <span className="h-2 w-2 rounded-full bg-[#EB5723]" />
-                </span>
+              <div className="pointer-events-none absolute -top-20 -right-24 h-56 w-56 rounded-full bg-[#EB5723]/10 blur-3xl" />
 
-                <div>
-                  <p className="text-[11px] tracking-[0.28em] text-white/55 uppercase">
-                    {data.kicker}
+              <div className="space-y-4">
+                {data.paragraphs?.map((p, idx) => (
+                  <p key={idx} className="text-white/75 leading-relaxed">
+                    {p}
                   </p>
-                  <h3 className="mt-1 text-lg md:text-xl font-semibold text-white">
-                    {data.title}
-                  </h3>
-                </div>
-              </div>
-
-              <div className="mt-6 space-y-3 text-white/75 leading-relaxed text-sm md:text-base">
-                {data.paragraphs.map((p, i) => (
-                  <p key={i}>{p}</p>
                 ))}
               </div>
 
-              <div className="mt-7 rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-                <p className="text-white/80 text-sm">{data.highlight}</p>
-                <div className="mt-3 h-px w-full bg-gradient-to-r from-[#EB5723]/70 via-[#EB5723]/20 to-transparent" />
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {data.tags.map((tag) => (
+              {/* Highlight pill */}
+              {!!data.highlight && (
+                <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.05] px-4 py-2">
+                  <span className="h-2 w-2 rounded-full bg-[#EB5723]" />
+                  <span className="text-white/80 text-sm">
+                    {data.highlight}
+                  </span>
+                </div>
+              )}
+
+              {/* Tags */}
+              {!!data.tags?.length && (
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {data.tags.map((tag, i) => (
                     <span
-                      key={tag}
-                      className="text-[12px] px-3 py-1 rounded-full bg-white/[0.06] border border-white/10 text-white/80"
+                      key={i}
+                      className="
+                        rounded-full border border-white/10
+                        bg-white/[0.04]
+                        px-3 py-1.5
+                        text-white/75 text-xs
+                      "
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-              </div>
+              )}
+
+              {/* CTA */}
+              {(data.ctaPrimary || data.ctaSecondary) && (
+                <div className="mt-8 flex flex-col sm:flex-row gap-3">
+                  {data.ctaPrimary && (
+                    <button
+                      type="button"
+                      className="
+                        h-11 px-5 rounded-full
+                        bg-[#EB5723] text-black font-semibold
+                        hover:opacity-90 transition
+                      "
+                    >
+                      {data.ctaPrimary}
+                    </button>
+                  )}
+                  {data.ctaSecondary && (
+                    <button
+                      type="button"
+                      className="
+                        h-11 px-5 rounded-full
+                        bg-white/10 text-white font-semibold
+                        border border-white/10
+                        hover:bg-white/15 transition
+                      "
+                    >
+                      {data.ctaSecondary}
+                    </button>
+                  )}
+                </div>
+              )}
             </motion.div>
 
-            {/* Right card */}
+            {/* Right: benefits */}
             <motion.div
-              initial={{ opacity: 0, y: 18 }}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
-              transition={{ duration: 0.55, delay: 0.06 }}
-              className="md:col-span-3 rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-6 md:p-8 shadow-[0_22px_70px_-48px_rgba(0,0,0,0.95)] relative"
+              transition={{ duration: 0.45, delay: 0.05 }}
+              className="
+                rounded-3xl border border-white/10
+                bg-gradient-to-b from-white/[0.06] to-black/0
+                backdrop-blur-2xl
+                p-6 md:p-8
+                shadow-[0_22px_70px_-48px_rgba(0,0,0,0.9)]
+                transform-gpu
+              "
             >
-              <div className="pointer-events-none absolute -top-24 -right-24 w-64 h-64 rounded-full bg-[#EB5723]/10 blur-3xl opacity-70" />
+              <div className="flex items-center justify-between">
+                <span className="text-white/70 text-sm">
+                  {isAr ? "النتيجة" : "Outcome"}
+                </span>
+                <span className="h-1.5 w-1.5 rounded-full bg-[#EB5723]" />
+              </div>
 
-              <h2 className="text-2xl md:text-3xl font-semibold text-white leading-tight">
-                {data.headline}
-              </h2>
-
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                {data.benefits.map((b) => (
-                  <Benefit key={b.title} title={b.title} desc={b.desc} />
+              <div className="mt-5 grid gap-3">
+                {data.benefits?.map((b, idx) => (
+                  <div
+                    key={idx}
+                    className="rounded-2xl border border-white/10 bg-white/[0.04] p-4"
+                  >
+                    <div className="flex items-start gap-3">
+                      <span className="mt-1 h-2 w-2 rounded-full bg-[#EB5723]/90" />
+                      <div>
+                        <h3 className="text-white font-semibold">{b.title}</h3>
+                        <p className="mt-1 text-white/70 text-sm leading-relaxed">
+                          {b.desc}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 ))}
               </div>
 
-              <div className="mt-8 flex items-center gap-3">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center h-11 px-5 rounded-full bg-[#EB5723] text-white font-semibold hover:opacity-95 transition"
-                >
-                  {data.ctaPrimary}
-                </a>
-                <a
-                  href="#work"
-                  className="inline-flex items-center justify-center h-11 px-5 rounded-full bg-white/10 border border-white/10 text-white/90 hover:bg-white/15 transition"
-                >
-                  {data.ctaSecondary}
-                </a>
-              </div>
+              <div className="mt-6 h-px w-24 bg-gradient-to-r from-[#EB5723] via-[#EB5723]/40 to-transparent" />
+
+              <p className="mt-4 text-white/55 text-xs leading-relaxed">
+                {isAr
+                  ? "ميزة تنافسية في سرعة التنفيذ، وضبط التفاصيل، وتكلفة إنتاج أكثر كفاءة."
+                  : "A competitive edge in speed, detail control, and more efficient production cost."}
+              </p>
             </motion.div>
           </div>
         </div>
       </section>
     </Section>
-  );
-}
-
-function Benefit({ title, desc }: { title: string; desc: string }) {
-  return (
-    <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-      <div className="flex items-start gap-3">
-        <span className="mt-1 h-2 w-2 rounded-full bg-[#EB5723]" />
-        <div>
-          <h4 className="text-white font-semibold">{title}</h4>
-          <p className="mt-1 text-white/70 text-sm leading-relaxed">{desc}</p>
-        </div>
-      </div>
-    </div>
   );
 }
