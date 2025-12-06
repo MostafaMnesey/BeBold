@@ -33,7 +33,11 @@ export default function HeroMoblie({ locale, isRTL }: Props) {
         >
           {t("title")}{" "}
           <span className="text-mainOrange">
-            <TypewriterText text="Be Bold" speed={250} deleteSpeed={250} />
+            <TypewriterText
+              text={`${t("BeBold")}`}
+              speed={250}
+              deleteSpeed={250}
+            />
           </span>{" "}
           {t("titleEnd")}
         </motion.h1>
@@ -54,7 +58,7 @@ export default function HeroMoblie({ locale, isRTL }: Props) {
           className="mt-6 flex flex-col gap-3"
         >
           <Link
-            href={`/${locale}/contact`}
+            href={`/${locale}/Contact`}
             className="inline-flex items-center justify-center gap-2 rounded-full bg-mainOrange px-6 py-3 text-white font-semibold hover:opacity-90 transition"
           >
             {t("ctaPrimary")}

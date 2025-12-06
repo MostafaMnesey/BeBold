@@ -17,7 +17,7 @@
     "arabic": "Arabic"
   },
   "hero": {
-    "BeBold": "Be Bold",
+    "BeBold": "Be Bold",  
     "Experiences": "Experiences",
     "We craft exceptional digital experiences that push boundaries and inspire innovation": "We craft exceptional digital experiences that push boundaries and inspire innovation",
     "Transform your vision into reality with cutting-edge solutions designed for the future": "Transform your vision into reality with cutting-edge solutions designed for the future",
@@ -198,60 +198,7 @@
     "ctaPrimary": { "label": "Start Your Project", "href": "#contact" },
     "ctaSecondary": { "label": "View Our Work", "href": "#work" }
   },
-  "footer": {
-    "brand": { "name": "بي بولد", "tagline": "وكالة تسويق متكاملة" },
-    "description": "بنمزج الاستراتيجية بالإبداع عشان نبني علامات قوية وتواصل حقيقي يحقق نتائج.",
-    "rights": "© 2025 بي بولد. جميع الحقوق محفوظة.",
-    "columns": [
-      {
-        "title": "روابط",
-        "links": [
-          { "label": "الرئيسية", "href": "#home" },
-          { "label": "من نحن", "href": "#about" },
-          { "label": "الخدمات", "href": "#services" },
-          { "label": "تواصل معنا", "href": "#contact" }
-        ]
-      },
-      {
-        "title": "مهم",
-        "links": [
-          { "label": "أعمالنا", "href": "#work" },
-          { "label": "الأسعار", "href": "#pricing" },
-          { "label": "الأسئلة الشائعة", "href": "#faq" },
-          { "label": "سياسة الخصوصية", "href": "#privacy" }
-        ]
-      }
-    ],
-    "socials": [
-      {
-        "key": "instagram",
-        "label": "Instagram",
-        "href": "https://instagram.com/bebold.agency"
-      },
-      {
-        "key": "facebook",
-        "label": "Facebook",
-        "href": "https://facebook.com"
-      },
-      { "key": "tiktok", "label": "TikTok", "href": "https://tiktok.com" },
-      { "key": "linkedin", "label": "LinkedIn", "href": "https://linkedin.com" }
-    ],
-    "contact": {
-      "title": "تواصل سريع",
-      "items": [
-        {
-          "label": "واتساب",
-          "value": "+20 10 0000 0000",
-          "href": "https://wa.me/201000000000"
-        },
-        {
-          "label": "بريد",
-          "value": "hello@bebold.agency",
-          "href": "mailto:hello@bebold.agency"
-        }
-      ]
-    }
-  },
+
   "footer": {
     "brand": { "name": "Be Bold", "tagline": "Full-service marketing agency" },
     "description": "We blend strategy with creativity to build strong brands and real communication that delivers results.",
@@ -304,6 +251,157 @@
           "href": "mailto:hello@bebold.agency"
         }
       ]
+    }
+  },
+  "about": {
+    "kicker": "About Us",
+    "title": "We build brands that don’t just show up — they lead",
+    "subtitle": "Be Bold is a full-service marketing agency from Egypt. We blend strategy with creativity to produce clear outcomes and real brand stories.",
+    "stats": [
+      { "value": "4+", "label": "Years of experience" },
+      { "value": "120+", "label": "Creative campaigns" },
+      { "value": "100+", "label": "Active clients" }
+    ],
+    "story": {
+      "title": "Our story",
+      "p1": "We started with a simple belief: marketing should be clear, honest, and built on smart decisions—not noise.",
+      "p2": "Over time, we assembled a multi-disciplinary team—strategy, design, content, and production—so every brand step stays aligned with the goal.",
+      "p3": "Our focus is always the same: a clear voice, a strong identity, and an experience that leaves an impact."
+    },
+    "pillars": {
+      "title": "How we work (3 pillars)",
+      "items": [
+        {
+          "title": "Strategy first",
+          "desc": "We start by understanding the market and audience, then define measurable goals and a realistic plan."
+        },
+        {
+          "title": "Creativity with purpose",
+          "desc": "No decoration—every word and visual has a reason and moves us closer to the outcome."
+        },
+        {
+          "title": "Execution that holds",
+          "desc": "Clear deliverables, continuous alignment, and documentation that keeps projects resilient."
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Our journey",
+      "items": [
+        {
+          "year": "2021",
+          "title": "The start",
+          "desc": "We launched with a small team and a big vision."
+        },
+        {
+          "year": "2022",
+          "title": "Service expansion",
+          "desc": "We grew across strategy, content, and design."
+        },
+        {
+          "year": "2023",
+          "title": "In-house production",
+          "desc": "We built faster, more efficient internal production."
+        },
+        {
+          "year": "2024",
+          "title": "Stronger partnerships",
+          "desc": "We built long-term relationships across Egypt and beyond."
+        }
+      ]
+    },
+    "constants": [
+      "Content",
+      "Brand Identity",
+      "Strategy",
+      "Design",
+      "Production",
+      "Creativity",
+      "Execution",
+      "Results",
+      "Communication"
+    ],
+    "team": {
+      "title": "Our team",
+      "subtitle": "Strategists, creators, designers, and content makers—working as one unit."
+    },
+    "cta": {
+      "title": "Ready to start?",
+      "subtitle": "Let’s understand your goal, build a plan, and ship campaigns that matter.",
+      "primary": "Start your project",
+      "secondary": "Contact us"
+    }
+  },
+  "contactUs": {
+    "kicker": "Contact",
+    "title": "Let’s start with your goal",
+    "subtitle": "Send a few details and we’ll reply with a quick first plan and next steps.",
+    "info": {
+      "title": "Contact info",
+      "phoneLabel": "Phone",
+      "phoneValue": "+20 000 000 0000",
+      "emailLabel": "Email",
+      "emailValue": "hello@bebold.com",
+      "addressLabel": "Address",
+      "addressValue": "Be Bold — Egypt"
+    },
+    "social": {
+      "title": "Social",
+      "instagram": "https://instagram.com/",
+      "facebook": "https://facebook.com/",
+      "linkedin": "https://linkedin.com/"
+    },
+    "map": {
+      "title": "Location",
+      "note": "Use the map for directions if you’d like to visit.",
+      "iframeSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3427.396721941261!2d30.99109291150262!3d30.79150708268302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c9226ad07d5d%3A0x57fb03e6328cbec7!2sBeBold%20Agancy!5e0!3m2!1sen!2seg!4v1764940354061!5m2!1sen!2seg"
+    },
+    "form": {
+      "title": "Contact form",
+      "subtitle": "We’ll get back to you during business hours.",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "company": "Company (optional)",
+        "service": "Service",
+        "budget": "Budget range",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Your name",
+        "email": "you@email.com",
+        "phone": "+20 ...",
+        "company": "Company name",
+        "message": "Share your goal, timeline, and any helpful details…"
+      },
+      "services": {
+        "brand": "Brand strategy/identity",
+        "social": "Social media management",
+        "ads": "Paid ads",
+        "production": "Content production",
+        "web": "Website / landing page"
+      },
+      "budgets": {
+        "low": "Low",
+        "mid": "Mid",
+        "high": "High",
+        "enterprise": "Enterprise"
+      },
+      "submit": "Send",
+      "submitting": "Sending…",
+      "submitError": "Something went wrong. Please try again.",
+
+      "success": "Message sent successfully. We’ll reply soon.",
+      "note": "By submitting, you agree we’ll use your info to contact you about this request only.",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter your email.",
+        "emailInvalid": "Please enter a valid email.",
+        "message": "Please enter your message.",
+        "generic": "Something went wrong. Please try again.",
+        "phone": "Please enter a valid phone number."
+      }
     }
   }
 }

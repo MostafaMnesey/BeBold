@@ -6,6 +6,7 @@ import Navbar from "../../Components/Navbar";
 import AOSWrapper from "../../Components/aos";
 import { Cairo, Inter } from "next/font/google";
 import Footer from "../../Components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -64,9 +65,13 @@ export default async function LocaleLayout({
       <body className={`${inter.variable} ${cairo.variable} font-ar`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <AOSWrapper>
-            <Navbar />
-            {children}
-            <Footer />
+            {/* Content */}
+            <div className="relative z-10 min-h-dvh">
+              <Navbar />
+              <main className="relative z-10 pt-28">{children}</main>
+              <Footer />
+            </div>
+            <Toaster position="top-right" reverseOrder={false} />
           </AOSWrapper>
         </NextIntlClientProvider>
       </body>

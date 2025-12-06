@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
   const menuLinks = useMemo(
     () => [
       { key: "home", href: "/" },
-      { key: "about", href: "/About" },
+      { key: "about", href: "/about" },
       { key: "services", href: "/Services" },
       { key: "pricing", href: "/Pricing" },
       { key: "contact", href: "/Contact" },
@@ -119,9 +119,9 @@ const Navbar: React.FC = () => {
         <div className="px-4 md:px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href={`/${locale}/Home`} className="flex items-center gap-3">
-            <div className="relative rounded-2xl overflow-hidden w-[56px] h-[56px] md:w-[64px] md:h-[64px]">
+            <div className="relative rounded-2xl overflow-hidden w-[80px] h-[80px] md:w-[70px] md:h-[70px]">
               <Image
-                src="/png logo.webp"
+                src="/logo.webp"
                 alt="Logo"
                 fill
                 sizes="(min-width: 768px) 64px, 56px"
@@ -158,7 +158,7 @@ const Navbar: React.FC = () => {
                       transition-all duration-300
                       ${
                         active
-                          ? "text-white bg-white/14 border border-white/10 shadow-inner"
+                          ? "text-white bg-white/14 border hover:text-mainOrange border-white/10 shadow-inner"
                           : "text-white/80 hover:text-white hover:bg-white/10"
                       }
                     `}

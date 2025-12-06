@@ -99,7 +99,7 @@ function StatCard({ stat }: { stat: Stat }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.45 }}
-      className="rounded-3xl border hover:border-mainOrange/50 transition-transform transition-colors hover:scale-[1.05] hover:shadow-mainOrange border-white/10 bg-white/[0.06] backdrop-blur-2xl p-6 md:p-7 shadow-[0_22px_70px_-48px_rgba(0,0,0,0.95)] transform-gpu will-change-transform"
+      className="rounded-md border hover:border-mainOrange/50 transition-transform transition-colors hover:scale-[1.05] hover:shadow-mainOrange border-white/10 bg-white/[0.06] backdrop-blur-2xl p-6 md:p-7 shadow-[0_22px_70px_-48px_rgba(0,0,0,0.95)] transform-gpu will-change-transform"
     >
       <div className="flex items-baseline gap-2">
         <div className="text-4xl md:text-5xl font-semibold text-white tabular-nums">

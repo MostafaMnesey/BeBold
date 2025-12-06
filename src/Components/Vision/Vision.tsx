@@ -31,7 +31,7 @@ const VisionSection: React.FC = () => {
             viewport={{ once: true, amount: 0.35 }}
             className="text-center mb-10 md:mb-14"
           >
-            <p className="text-xs md:text-sm tracking-[0.32em] text-mainOrange uppercase">
+            <p className="text-[30px] md:text-[40px] pb-2  lg:pb-5 tracking-[0.32em] text-mainOrange uppercase">
               {t("title")}
             </p>
             <h2 className="mt-4 text-2xl md:text-4xl lg:text-5xl font-semibold text-white leading-snug">

@@ -175,7 +175,7 @@ function Lane({
             >
               <div
                 className="
-                  h-full w-full rounded-3xl border border-white/10
+                  h-full w-full rounded-md border border-white/10
                   bg-white/[0.04] backdrop-blur-2xl
                   p-6 md:p-8
                   shadow-[0_22px_70px_-48px_rgba(0,0,0,0.90)]
@@ -221,7 +221,7 @@ function Lane({
         >
           <div
             className="
-              group relative h-full rounded-3xl
+              group relative h-full rounded-md
               border border-white/10
               bg-white/[0.07] backdrop-blur-2xl
               p-6 md:p-8

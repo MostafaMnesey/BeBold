@@ -138,3 +138,46 @@ html {
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+/* ===== Scrollbar (WebKit: Chrome/Edge/Safari) ===== */
+:root {
+  --sb-track: rgba(255, 255, 255, 0.06);
+  --sb-thumb: rgba(235, 87, 35, 0.55); /* #EB5723 */
+  --sb-thumb-hover: rgba(235, 87, 35, 0.85);
+  --sb-border: rgba(0, 0, 0, 0.35);
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--sb-track);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--sb-thumb), rgba(235, 87, 35, 0.25));
+  border-radius: 999px;
+  border: 2px solid var(--sb-border); /* يخليه أنعم مع الخلفية */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    var(--sb-thumb-hover),
+    rgba(235, 87, 35, 0.35)
+  );
+}
+
+/* Corner (when both scrollbars exist) */
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ===== Firefox ===== */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sb-thumb) var(--sb-track);
+}

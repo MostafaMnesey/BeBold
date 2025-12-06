@@ -1,16 +1,10 @@
 import React from "react";
-import Silk from "../../Components/Silk";
-import Hero from "@/Components/Hero/Hero";
-import Mission from "@/Components/Mission/Mission";
-import Vision from "@/Components/Vision/Vision";
-import Values from "@/Components/Values/Values";
-import { Metadata } from "next";
-import FactsCounters from "../../Components/Facts/Facts";
-import ExclusiveAdvantageSection from "../../Components/ExclusiveAdvantage/ExclusiveAdvantage";
-import LocationAndContactWays from "../../Components/Contact/Contact";
 
+import { Metadata } from "next";
+import AboutPage from "../../../Components/About/About";
+import Silk from "../../../Components/Silk";
 export const metadata: Metadata = {
-  title: "Be Bold",
+  title: "Be Bold | About",
   description:
     "Be Bold is a marketing agency that creates exceptional digital experiences that push boundaries and inspire innovation",
   keywords: [
@@ -45,7 +39,7 @@ export const metadata: Metadata = {
     icon: "/logo.png",
   },
 };
-export default function Home() {
+export default function Page() {
   return (
     <>
       <div className="relative w-full overflow-hidden leading-4 bg-black">
@@ -53,7 +47,6 @@ export default function Home() {
         <div className="fixed inset-0 z-0">
           <Silk desktopMotion="low" />
         </div>
-
         {/* ===== Overlays Layer (darken + focus center) ===== */}
         <div className="pointer-events-none fixed inset-0 z-10">
           {/* dark gradient */}
@@ -61,36 +54,14 @@ export default function Home() {
           {/* center vignette */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.75)_60%,rgba(0,0,0,0.95)_100%)]" />
         </div>
-
         {/* ===== Decorative blobs ===== */}
         <div className="pointer-events-none absolute inset-0 z-10">
           <div className="absolute -top-20 -left-24 w-[520px] h-[520px] rounded-full blur-3xl bg-[#EB5723]/18 animate-blob" />
+
           <div className="absolute -bottom-28 -right-24 w-[620px] h-[620px] rounded-full blur-3xl bg-purple-500/18 animate-blob animation-delay-2000" />
         </div>
 
-        {/* ===== Hero Component ===== */}
-        <Hero />
-
-        {/* ===== Mission Component ===== */}
-        <Mission />
-
-        {/* ===== Vision Component ===== */}
-        <Vision />
-
-        {/* ===== Values Component ===== */}
-        <Values />
-        {/*
-        Facts
-        */}
-        <FactsCounters />
-
-        {/*
-        ExclusiveAdvantageSection
-        */}
-        <ExclusiveAdvantageSection />
-
-        {/* location */}
-        <LocationAndContactWays />
+        <AboutPage />
       </div>
     </>
   );

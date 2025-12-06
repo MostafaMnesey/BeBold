@@ -44,11 +44,16 @@ export default function HeroDesktop({ locale, isRTL }: Props) {
 
           <motion.h1
             variants={itemVariants}
-            className="text-white text-4xl md:text-6xl font-semibold leading-tight"
+            className={`text-white text-4xl md:text-6xl font-semibold leading-tight}`}
           >
             {t("title")}{" "}
             <span className="text-mainOrange">
-              <TypewriterText text="Be Bold" />
+              <TypewriterText
+                className={`my-5 ${isRTL ? "text-right" : "text-left"}`}
+                text={`${t("BeBold")}`}
+                speed={250}
+                deleteSpeed={250}
+              />
             </span>{" "}
             {t("titleEnd")}
           </motion.h1>
@@ -65,7 +70,7 @@ export default function HeroDesktop({ locale, isRTL }: Props) {
             className="mt-2 flex flex-wrap items-center gap-3"
           >
             <Link
-              href={`/${locale}/contact`}
+              href={`/${locale}/Contact`}
               className="inline-flex items-center justify-center gap-2 rounded-full bg-mainOrange px-6 py-3 text-white font-semibold hover:opacity-90 transition"
             >
               {t("ctaPrimary")}
