@@ -58,6 +58,7 @@ export default function ContactForm() {
   const t = useTranslations("");
   const locale = useLocale();
   const isAr = locale.startsWith("ar");
+  console.log(locale);
 
   const [isPending, startTransition] = useTransition();
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
@@ -104,7 +105,7 @@ export default function ContactForm() {
   const onSubmit = handleSubmit((data) => {
     startTransition(async () => {
       try {
-        const response = await fetch("/api/Contact", {
+        const response = await fetch(`/${locale}/api/Contact`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
