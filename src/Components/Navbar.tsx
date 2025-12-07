@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
     () => [
       { key: "home", href: "/" },
       { key: "about", href: "/about" },
-      { key: "services", href: "/Services" },
+      { key: "services", href: "/services" },
       { key: "pricing", href: "/Pricing" },
       { key: "contact", href: "/Contact" },
     ],
@@ -118,10 +118,10 @@ const Navbar: React.FC = () => {
       >
         <div className="px-4 md:px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href={`/${locale}/Home`} className="flex items-center gap-3">
-            <div className="relative rounded-2xl overflow-hidden w-[80px] h-[80px] md:w-[70px] md:h-[70px]">
+          <Link href={`/${locale}`} className="flex items-center gap-3">
+            <div className="relative rounded-2xl overflow-hidden w-[60px] h-[60px] md:w-[70px] md:h-[60px]">
               <Image
-                src="/logo.webp"
+                src="/logoBig.webp"
                 alt="Logo"
                 fill
                 sizes="(min-width: 768px) 64px, 56px"

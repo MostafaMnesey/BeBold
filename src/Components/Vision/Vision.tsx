@@ -132,7 +132,7 @@ const VisionSection: React.FC = () => {
 
                   <div className="mt-8 flex items-center gap-3">
                     <div className="h-px w-20 bg-gradient-to-r from-mainOrange via-[#EB5723]/40 to-transparent" />
-                    <span className="text-sm text-white/55">BE BOLD</span>
+                    <span className="text-sm text-white/55">BeBold</span>
                   </div>
                 </div>
               </div>

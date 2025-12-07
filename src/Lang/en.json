@@ -6,6 +6,119 @@
     "description": "We are working hard to bring you an incredible experience. Be patient, greatness is on the way.",
     "rights": "© 2025 BeBold. All rights reserved."
   },
+
+  "servicesPage": {
+    "kicker": "Services",
+    "title": "Pick a track. We handle the rest.",
+    "subtitle": "Three tracks built for fast execution and clear deliverables—BeBold style.",
+
+    "tabs": {
+      "branding": {
+        "eyebrow": "Brand",
+        "title": "Branding",
+        "desc": "Build a strong identity and a clear brand voice—so you show up consistently and stand out.",
+        "chips": ["Brand Strategy", "Visual Identity", "Guidelines"],
+        "features": [
+          {
+            "title": "Brand strategy",
+            "text": "Positioning, audience, messaging, and a brand story that stays consistent."
+          },
+          {
+            "title": "Visual identity system",
+            "text": "Logo, colors, typography, and a flexible visual language—not just a one-off design."
+          },
+          {
+            "title": "Brand guidelines",
+            "text": "A complete kit your team can use across social, print, and digital touchpoints."
+          }
+        ],
+        "steps": [
+          { "t": "Discovery", "d": "Understand brand, market, and audience" },
+          {
+            "t": "Directions",
+            "d": "Moodboards, messaging, and identity routes"
+          },
+          { "t": "Delivery", "d": "Final assets + brand book + templates" }
+        ],
+        "cta": {
+          "title": "Build your brand the right way",
+          "text": "Tell us what you’re building and we’ll recommend the best branding scope.",
+          "primary": "Start your branding",
+          "secondary": "See branding deliverables"
+        }
+      },
+
+      "marketing": {
+        "eyebrow": "Studio",
+        "title": "Media Production",
+        "desc": "In-house production that’s faster, smoother, and built for modern platforms.",
+        "chips": ["Reels & Short-form", "Creative Direction", "Editing"],
+        "features": [
+          {
+            "title": "Creative direction",
+            "text": "Concepts, scripts, mood, styling, and shot lists to keep production sharp and on-brand."
+          },
+          {
+            "title": "Shoot & execution",
+            "text": "On-set production with high-quality visuals designed for social performance."
+          },
+          {
+            "title": "Post-production",
+            "text": "Editing, color, sound, subtitles, and multiple cuts optimized per platform."
+          }
+        ],
+        "steps": [
+          { "t": "Pre-production", "d": "Concept, script, plan, and schedule" },
+          { "t": "Production", "d": "Shoot day(s): direction + capture" },
+          { "t": "Post-production", "d": "Edit, revisions, and final delivery" }
+        ],
+        "cta": {
+          "title": "Produce content that performs",
+          "text": "Share your goal and we’ll propose the right production package and timeline.",
+          "primary": "Start production",
+          "secondary": "View production packages"
+        }
+      },
+
+      "digital": {
+        "eyebrow": "Growth",
+        "title": "Digital Marketing",
+        "desc": "Performance-focused marketing across social, ads, and funnels—measured with clear KPIs.",
+        "chips": ["Social Media", "Paid Ads", "CRO & Funnels"],
+        "features": [
+          {
+            "title": "Social media management",
+            "text": "Content planning, captions, creatives, publishing, and community management."
+          },
+          {
+            "title": "Paid advertising",
+            "text": "Meta/Google campaigns with creative testing, targeting, and ROAS-driven optimization."
+          },
+          {
+            "title": "Conversion & funnels",
+            "text": "Landing pages, offers, and funnel improvements to increase leads and sales."
+          }
+        ],
+        "steps": [
+          { "t": "Strategy", "d": "Goals, KPIs, audience, and channel plan" },
+          { "t": "Launch", "d": "Content + campaigns + tracking setup" },
+          { "t": "Optimize", "d": "Weekly iteration and performance reporting" }
+        ],
+        "cta": {
+          "title": "Scale your growth with clarity",
+          "text": "Tell us your target and we’ll map the best channels and KPIs to hit it.",
+          "primary": "Start marketing",
+          "secondary": "View marketing plans"
+        }
+      }
+    },
+
+    "bottomStrip": {
+      "title": "Clear deliverables + regular updates",
+      "subtitle": "We work in sprints, with checklists, reviews, and transparent reporting.",
+      "tags": ["Sprint", "KPIs", "Checklist", "Review"]
+    }
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -17,13 +130,13 @@
     "arabic": "Arabic"
   },
   "hero": {
-    "BeBold": "Be Bold",  
+    "BeBold": "BeBold",
     "Experiences": "Experiences",
     "We craft exceptional digital experiences that push boundaries and inspire innovation": "We craft exceptional digital experiences that push boundaries and inspire innovation",
     "Transform your vision into reality with cutting-edge solutions designed for the future": "Transform your vision into reality with cutting-edge solutions designed for the future",
     "Get Started": "Get Started",
     "Learn More": "Learn More",
-    "title": "AT BE BOLD, WE CREATE IDEAS",
+    "title": "AT BeBold, WE CREATE IDEAS",
     "titleMiddle": "THAT DON'T JUST STAND OUT",
     "titleEnd": "THEY LEAD.",
     "subtitle": "We're a full‑service marketing agency based in Egypt, working remotely with clients across the globe.",
@@ -40,7 +153,7 @@
     "partnershipNotJustService": "Partnership, Not Just Service",
     "makingBrandsMatter": "Making Brands Matter",
     "subtitle": "We blend strategy with imagination to build brands that truly connect.",
-    "paragraph1": "Our mission is to create smart, creative, and results-driven marketing that helps brands grow with purpose and confidence. At Be Bold, we blend strategy with imagination to craft campaigns that speak to hearts and minds.",
+    "paragraph1": "Our mission is to create smart, creative, and results-driven marketing that helps brands grow with purpose and confidence. At BeBold, we blend strategy with imagination to craft campaigns that speak to hearts and minds.",
     "paragraph2": "We work closely with every client to understand their story, bring their vision to life and build a connection that lasts.",
     "paragraph3": "Because for us, success isn't just about visibility it's about making brands matter."
   },
@@ -127,7 +240,7 @@
     "title": "In-House Media Production",
     "headline": "Everything under one roof—so production moves faster and looks better.",
     "paragraphs": [
-      "What truly sets Be Bold apart is our fully equipped, in-house media team—the only one of its kind in the Delta region.",
+      "What truly sets BeBold apart is our fully equipped, in-house media team—the only one of its kind in the Delta region.",
       "From styling and set design to creative direction and reel production, everything happens under one roof."
     ],
     "highlight": "Faster production • Lower costs • World-class content",
@@ -200,9 +313,9 @@
   },
 
   "footer": {
-    "brand": { "name": "Be Bold", "tagline": "Full-service marketing agency" },
+    "brand": { "name": "BeBold", "tagline": "Full-service marketing agency" },
     "description": "We blend strategy with creativity to build strong brands and real communication that delivers results.",
-    "rights": "© 2025 Be Bold. All rights reserved.",
+    "rights": "© 2025 BeBold. All rights reserved.",
     "columns": [
       {
         "title": "Links",
@@ -256,7 +369,7 @@
   "about": {
     "kicker": "About Us",
     "title": "We build brands that don’t just show up — they lead",
-    "subtitle": "Be Bold is a full-service marketing agency from Egypt. We blend strategy with creativity to produce clear outcomes and real brand stories.",
+    "subtitle": "BeBold is a full-service marketing agency from Egypt. We blend strategy with creativity to produce clear outcomes and real brand stories.",
     "stats": [
       { "value": "4+", "label": "Years of experience" },
       { "value": "120+", "label": "Creative campaigns" },
@@ -343,7 +456,7 @@
       "emailLabel": "Email",
       "emailValue": "hello@bebold.com",
       "addressLabel": "Address",
-      "addressValue": "Be Bold — Egypt"
+      "addressValue": "BeBold — Egypt"
     },
     "social": {
       "title": "Social",

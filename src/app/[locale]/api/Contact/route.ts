@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const GSHEET_WEBAPP_URL =
-  "https://script.google.com/macros/s/AKfycbwp3nFstCL6E3KivueliyztM4Ug8WSQfPowYXumlFR071Opsn2U21njT_gJDAGLjVv4/exec";
+  "https://script.google.com/macros/s/AKfycbx7T9SM835WP3oORcU5h8IzqxxBUN7BrOMfhRPy4VZOBQouu96fRBrDkjJDjafYcori/exec";
 
 export async function POST(req: Request) {
   const controller = new AbortController();
@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     });
 
     const text = await res.text(); // اقرأها text الأول
-    let out: any = null;
+    let out: Record<string, unknown> | null = null;
 
     try {
       out = text ? JSON.parse(text) : null;
@@ -71,11 +71,13 @@ export async function POST(req: Request) {
       ok: true,
       gsheet: out ?? text,
     });
-  } catch (err: any) {
+  } catch (err: unknown) {
     const message =
-      err?.name === "AbortError"
+      err instanceof Error && err.name === "AbortError"
         ? "Upstream timeout"
-        : err?.message || "Unknown error";
+        : err instanceof Error
+        ? err.message
+        : "Unknown error";
 
     return NextResponse.json({ ok: false, error: message }, { status: 500 });
   } finally {

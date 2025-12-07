@@ -10,9 +10,9 @@ import ExclusiveAdvantageSection from "../../Components/ExclusiveAdvantage/Exclu
 import LocationAndContactWays from "../../Components/Contact/Contact";
 
 export const metadata: Metadata = {
-  title: "Be Bold",
+  title: "BeBold",
   description:
-    "Be Bold is a marketing agency that creates exceptional digital experiences that push boundaries and inspire innovation",
+    "BeBold is a marketing agency that creates exceptional digital experiences that push boundaries and inspire innovation",
   keywords: [
     "marketing",
     "digital",
@@ -21,28 +21,30 @@ export const metadata: Metadata = {
     "design",
     "development",
   ],
-  authors: [{ name: "Be Bold", url: "https://bebold.com" }],
-  creator: "Be Bold",
-  publisher: "Be Bold",
+  authors: [{ name: "BeBold", url: "https://bebold.com" }],
+  creator: "BeBold",
+  publisher: "BeBold",
   openGraph: {
-    title: "Be Bold",
+    title: "BeBold",
     description:
-      "Be Bold is a marketing agency that creates exceptional digital experiences that push boundaries and inspire innovation",
+      "BeBold is a marketing agency that creates exceptional digital experiences that push boundaries and inspire innovation",
     url: "https://bebold.com",
-    siteName: "Be Bold",
+    siteName: "BeBold",
     images: [{ url: "/logo.png" }],
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Be Bold",
+    title: "BeBold",
     description:
-      "Be Bold is a marketing agency that creates exceptional digital experiences that push boundaries and inspire innovation",
+      "BeBold is a marketing agency that creates exceptional digital experiences that push boundaries and inspire innovation",
     images: [{ url: "/logo.png" }],
   },
   icons: {
-    icon: "/logo.png",
+    icon: [{ url: "/logo.webp", type: "image/webp" }],
+    shortcut: ["/logo.webp"],
+    apple: [{ url: "/logo.webp" }],
   },
 };
 export default function Home() {

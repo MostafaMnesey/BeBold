@@ -4,11 +4,11 @@ import { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import Navbar from "../../Components/Navbar";
 import AOSWrapper from "../../Components/aos";
-import { Cairo, Inter } from "next/font/google";
+import { Archivo, Cairo } from "next/font/google";
 import Footer from "../../Components/Footer/Footer";
 import { Toaster } from "react-hot-toast";
 
-const inter = Inter({
+const archivo = Archivo({
   subsets: ["latin"],
   variable: "--font-en",
   display: "swap",
@@ -59,10 +59,10 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={isRTL ? "rtl" : "ltr"}
-      className={`${inter.variable} ${cairo.variable} scroll-smooth`}
+      className={`${archivo.variable} ${cairo.variable} scroll-smooth`}
     >
       {/* مهم: لازم الـ variables يتطبقوا هنا */}
-      <body className={`${inter.variable} ${cairo.variable} font-ar`}>
+      <body className={`${archivo.variable} ${cairo.variable} font-en`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <AOSWrapper>
             {/* Content */}

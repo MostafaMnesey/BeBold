@@ -4,8 +4,9 @@ import { Metadata } from "next";
 
 import Silk from "../../../Components/Silk";
 import ContactClient from "../../../Components/ContactUs/ContactUs";
+import Services from "../../../Components/Services/Services";
 export const metadata: Metadata = {
-  title: "BeBold | Contact",
+  title: "BeBold | Services",
   description:
     "BeBold is a marketing agency that creates exceptional digital experiences that push boundaries and inspire innovation",
   keywords: [
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     images: [{ url: "/logo.png" }],
   },
   icons: {
-    icon: "/logo.png",
+    icon: "/logoBig.webp",
   },
 };
 export default function Page() {
@@ -61,7 +62,7 @@ export default function Page() {
 
           <div className="absolute -bottom-28 -right-24 w-[620px] h-[620px] rounded-full blur-3xl bg-purple-500/18 animate-blob animation-delay-2000" />
         </div>
-        <ContactClient />
+        <Services />
       </div>
     </>
   );

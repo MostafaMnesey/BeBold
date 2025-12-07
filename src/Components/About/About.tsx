@@ -31,7 +31,6 @@ import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
-
 type AboutT = {
   kicker: string;
   title: string;
@@ -223,11 +222,11 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-3 w-full md:w-auto">
+            <div className="grid grid-cols-2  lg:grid-cols-3 gap-3 w-full md:w-auto">
               {data?.constants.map((x, i) => (
                 <div
                   key={i}
-                  className="rounded-2xl border border-white/10 bg-white/[0.04] h-16 w-full md:w-28 flex items-center justify-center text-white/75 text-sm"
+                  className="rounded-2xl last:hidden lg:last:flex border border-white/10 bg-white/[0.04] h-16 w-full md:w-28 flex items-center justify-center text-white/75 text-sm"
                 >
                   {x}
                 </div>
